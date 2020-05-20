@@ -38,6 +38,10 @@
         android:layout_height="wrap_content"
         android:text="자동로그인을 하겠다"
         android:checked="true"/>
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자동로그인"/>
 
     <RadioGroup
         android:layout_width="match_parent"
