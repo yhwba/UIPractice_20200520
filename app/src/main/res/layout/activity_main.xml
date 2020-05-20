@@ -7,6 +7,12 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/soultree_logo"
+        />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,12 +42,14 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="자동로그인을 하겠다"
-        android:checked="true"/>
+        android:text="자동로그인"
+        android:checked="true"
+        android:gravity="center_horizontal"/>
+
     <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="자동로그인"/>
+        android:text="자동로그인" />
 
     <RadioGroup
         android:layout_width="match_parent"
