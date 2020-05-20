@@ -10,7 +10,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="아이디" />
+        android:text="아이디"
+        android:textColor="#000000"
+        android:textSize="18sp"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -21,7 +23,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="비밀번호" />
+        android:text="비밀번호"
+        android:textColor="#000000"
+        android:textSize="18sp"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -29,16 +33,14 @@
         android:hint="비밀번호를 입력하시오."
         android:inputType="numberPassword" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="한줄 자기 소개" />
-
-    <EditText
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher_round"
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:singleLine="true"
-        android:imeOptions="actionSearch"/>
+        android:text="로그인"/>
 
 
 </LinearLayout>
