@@ -3,20 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#fff"
     tools:context=".MainActivity"
     android:padding="15dp">
 
     <LinearLayout
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center">
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/apple_logo"
+            android:layout_width="126dp"
+            android:layout_height="60dp"
+            android:src="@drawable/disney_logo"
             android:scaleType="fitXY"
             />
 
@@ -27,7 +29,7 @@
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="아이디"
+        android:text="ID"
         android:textColor="#000000"
         android:textSize="18sp"/>
 
@@ -42,7 +44,7 @@
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="비밀번호"
+        android:text="PASSWORD"
         android:textColor="#000000"
         android:textSize="18sp"/>
 
@@ -57,9 +59,10 @@
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="자동로그인"
+        android:text="AutoLogin"
         android:checked="true"
-        android:gravity="center_horizontal"/>
+        android:gravity="center_horizontal"
+        android:visibility="invisible"/>
 
     <Switch
         android:layout_marginTop="10dp"
@@ -86,11 +89,30 @@
             android:layout_height="wrap_content"
             android:text="기타"/>
     </RadioGroup>
-    <Button
-        android:layout_marginTop="10dp"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="로그인"/>
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="JOIN US"/>
+
+    </LinearLayout>
+
 
 
 </LinearLayout>
