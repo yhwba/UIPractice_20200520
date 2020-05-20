@@ -5,16 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:background="#fff"
+    tools:context=".MainActivity"
+    android:padding="15dp">
 
-    <ImageView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:src="@drawable/apple_logo"
-        android:scaleType="fitCenter"
-        />
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/apple_logo"
+            android:scaleType="fitXY"
+            />
+
+    </LinearLayout>
+
 
     <TextView
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="아이디"
@@ -22,12 +32,14 @@
         android:textSize="18sp"/>
 
     <EditText
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="이메일 양식으로 입력바랍니다."
         android:inputType="textEmailAddress" />
 
     <TextView
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="비밀번호"
@@ -35,12 +47,14 @@
         android:textSize="18sp"/>
 
     <EditText
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="비밀번호를 입력하시오."
         android:inputType="numberPassword" />
 
     <CheckBox
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="자동로그인"
@@ -48,11 +62,13 @@
         android:gravity="center_horizontal"/>
 
     <Switch
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="자동로그인" />
 
     <RadioGroup
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -71,6 +87,7 @@
             android:text="기타"/>
     </RadioGroup>
     <Button
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="로그인"/>
